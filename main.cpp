@@ -28,8 +28,8 @@ int main(int argc, char* args[])
 		}
 		
 	}
-	mainWindow->keepOpen();
-	mainWindow->destroyWindow();
+	mainWindow->mainLoop();
+	mainWindow->destroyWindow();	// Cleanup
 	return 0;
 }
 
